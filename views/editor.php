@@ -39,9 +39,8 @@
 				url: "?p=salvar&file=<?php echo $nome_arquivo;?>",
 				data: { conteudo: editor.getValue() }
 			}).done(function( msg ) {
-				alert( msg );
+				//alert( msg );
 			});
-
 
 			salvar = false;
 		}
