@@ -18,10 +18,6 @@
 		</header>
 
 		<?php include "views/$p.php"; ?>
-		
-		<footer class="footer">
-			Powered by <a href="http://www.pmedia.no/off/">OneFileFramework</a>.
-		</footer>
 
 	</div>
 		
