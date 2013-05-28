@@ -1,0 +1,111 @@
+
+* { margin: 0; padding: 0;} /* Zero ALL margins, so browsers behave more consistent */
+
+.clearhack {
+  clear: both; /* This is used for some float layouts. Google "easy clearing" */
+}
+
+/* Main layout */
+
+html {
+	background-color: #333;
+	text-align: center;
+	font-size: 62.5%;
+	font-family: Verdana, serif;
+	line-height: 1.3;
+	color: #ddd;
+}
+
+body {
+	width: 744px; /* Safest maximum for 800x600 browsers */
+	margin: 0 auto;
+	text-align: left;
+	font-size: 1.6em;
+}
+
+div.content {
+	clear: both;
+  width: 100%;
+  text-align: left;
+}
+
+div.footer {
+  margin: 1em 0;
+  padding: 1em 0;
+  text-align: center;
+	font-size: 0.8em;
+  border-top: 2px solid black;
+}
+
+/* Defaults */
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 120%;
+	margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+ul, ol {
+	/*list-style-position: inside;*/
+	margin: 0.5em 0;
+	margin-left: 1em;
+}
+
+a, a:link, a:visited, a:hover, a:active {
+}
+
+a:visited {
+}
+
+a:hover {
+  color: #000000;
+}
+
+/* Menu */
+
+ul#menu {
+	margin: 0.5em 0;
+	padding: 0 0 0 25px;
+}
+
+ul#menu li {
+	list-style: none;
+	float: left;
+	display: block;
+	width: 6.5em;
+	padding: 0.5em 0;
+	border-top: none;
+	text-align: center;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	background-color: #eeeeee;
+}
+
+/* This is where you set the look for the selected menuitem */
+body.index ul#menu li.index,
+body.demo1 ul#menu li.demo1
+{
+	background-color: #cccccc;
+}
+
+ul#menu li:hover {
+	background-color: #ffeeee;
+}
+
+ul#menu a, ul#menu a:link, ul#menu a:visited, ul#menu a:hover, ul#menu a:active {
+	color: #000033;
+	/*text-decoration: none;*/
+}
+
+ul#menu a:hover {
+	color: #666666;
+}
+
+/* Other elements */
+
+div.errormsg { /* This one can't have border, because we want empty ones "invisible". */
+	color: #ff3333;
+}
